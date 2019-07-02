@@ -1,10 +1,13 @@
-# shell script that takes zotero exported mods markup xml and converts it to another encoding format of xml mods into a directory, 
-# called "rewritten". This is used at U of T for ingestion into our IIIF image server. 
-# The script uses an external list of terms separated by "|" in order to do the replacements
+# shell script that takes zotero exported mods markup and converts it to another encoding format of mods 
+# used at U of T for ingestion into our IIIF image server. The script uses an external list of terms separated by "|" in order to
+# to the replacements
 
 for file in $(ls *.xml)
 do
-        echo $file
-        awk -v FS='|' 'NR==FNR {a[$1]=$2;next} {for (i in a) gsub(i,a[i])}1' terms.txt $file >temp.txt
-        mv temp.txt rewritten/$file
+	echo $file
+	awk -v FS='|' 'NR==FNR {a[$1]=$2;next} {for (i in a) gsub(i,a[i])}1' terms.txt $file >temp.txt
+#	echo $file >>temp.txt
+        echo ${file:-1} >>temp.txt #this does not seem to work to take out the extension
+	mv temp.txt rewritten/$file
 done
+#getting rid of characters see http://www.masteringunixshell.net/qa45/bash-how-to-trim-string.html
