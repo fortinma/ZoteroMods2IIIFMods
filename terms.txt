@@ -1,6 +1,6 @@
 xml version="1.0"|xml version="1.0" encoding="UTF-8"
 <mods>|
-<modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">|•   <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.2" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+<modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">|•	<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.2" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
 dateCreated|dateIssued
 recordInfo:location
 recordContentSource|url
@@ -8,3 +8,4 @@ recordContentSource|url
 </modsCollection>|
 <topic>&lt;coordinates&gt;|<cartographics><coordinates>
 &lt;/coordinates&gt;</topic>|</coordinates></cartographics>
+<roleTerm type="code" authority="marcrelator">ctb</roleTerm>|<roleTerm type="text" authority="marcrelator">Contributor</roleTerm>
